@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 
 import GithubLogo from '../../Assets/github_logo.png';
 import GmailLogo from '../../Assets/gmail_logo.png';
@@ -23,10 +23,21 @@ export default function Home() {
     return (
         <div className="home-container" id="home">
             <Jump cascade>
-                <div style={{ height: "20%", width: "100%", marginTop: "16px" }}>
-                    <img src={GithubLogo} className="logo" width="35px" style={{ marginLeft: "16px" }} />
-                    <img src={GmailLogo} className="logo" width="35px" style={{ marginLeft: "10px" }} />
-                    <img src={LinkedinLogo} className="logo" width="35px" style={{ marginLeft: "10px" }} />
+                <div style={{ height: "20%", width: "100%", marginTop: "16px", display: "flex" }}>
+
+                    <a href="https://github.com/phungngo1020" target="_blank">
+                        <img src={GithubLogo} className="logo" width="35px" style={{ marginLeft: "16px" }} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/phung-ngo-65610a15b/" target="_blank">
+                        <img src={LinkedinLogo} className="logo" width="35px" style={{ marginLeft: "10px" }} />
+                    </a>
+                    <a href="https://www.linkedin.com/in/phung-ngo-65610a15b/" target="_blank">
+                        <img src={GmailLogo} className="logo" width="35px" style={{ marginLeft: "10px" }} />
+                    </a>
+                    {/* <div style={{display: "flex" , alignItems: "center"}}> */}
+                        <p>phungngo1020@gmail.com</p>
+                    {/* </div> */}
+
                 </div>
             </Jump>
 

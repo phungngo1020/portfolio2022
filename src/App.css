@@ -148,8 +148,7 @@ ul {
 }
 .logo:hover {
   cursor: pointer;
-  /* filter: invert(27%) sepia(4%) saturate(0%) hue-rotate(202deg) brightness(98%) contrast(90%); */
-  filter: invert(91%) sepia(2%) saturate(2495%) hue-rotate(314deg) brightness(93%) contrast(88%) drop-shadow(0 1px 1px #707070);
+  filter: invert(70%) sepia(0%) saturate(977%) hue-rotate(138deg) brightness(91%) contrast(75%) drop-shadow(0 1px 1px #9A9A9A);
 }
 
 .card {
@@ -222,7 +221,7 @@ ul {
 }
 .project-info {
   width: 65vw;
-  height: 30vh;
+  height: 35vh;
   border: 7px solid #707070;
   display: flex;
   justify-content: space-between;

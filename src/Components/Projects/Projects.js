@@ -33,14 +33,13 @@ export default function Projects() {
           <Fade right>
             <div className="project-info">
               <div style={{ width: "50%", padding: "2rem" }}>
-                <a style={{cursor: "pointer"}}>
-                <h2 className="hvr-wobble-top">PORTFOLIO SHOP</h2>
+                <a style={{ cursor: "pointer" }} href="https://pn-template-shop.herokuapp.com/" target="_blank">
+                  <h2 className="hvr-wobble-top">PORTFOLIO SHOP</h2>
                 </a>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
+                  An e-commerce website that allows users to purchase portfolio templates.
                 </p>
+                <p>Node.js | Express | MongoDB | Stripe | Pagination | Heroku | Git</p>
                 {/* <Jello cascade> */}
                 <div style={{ display: "flex", marginTop: "1rem" }}>
                   <img
@@ -49,13 +48,15 @@ export default function Projects() {
                     width="35px"
                     height="35px"
                   />
-                  <img
-                    src={LinkLogo}
-                    className="logo hvr-wobble-top"
-                    width="35px"
-                    height="35px"
-                    style={{ marginLeft: "0.5rem" }}
-                  />
+                  <a style={{ cursor: "pointer" }} href="https://pn-template-shop.herokuapp.com/" target="_blank">
+                    <img
+                      src={LinkLogo}
+                      className="logo hvr-wobble-top"
+                      width="35px"
+                      height="35px"
+                      style={{ marginLeft: "0.5rem" }}
+                    />
+                  </a>
                 </div>
                 {/* </Jello> */}
               </div>
@@ -74,14 +75,13 @@ export default function Projects() {
           <Fade right>
             <div className="project-info">
               <div style={{ width: "50%", padding: "2rem" }}>
-                <a style={{cursor: "pointer"}}>
+                <a style={{ cursor: "pointer" }} href="https://covid-data-tracker.herokuapp.com/" target="_blank">
                   <h2 className="hvr-wobble-top">COVID-19 TRACKER</h2>
                 </a>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
+                  A React application that allows users to see live COVID-19 data and compare countries' data.
                 </p>
+                <p>React | Material UI | Charts.js | HTML | CSS | Heroku | Git</p>
 
                 {/* <Jello cascade> */}
                 <div style={{ display: "flex", marginTop: "1rem" }}>
@@ -91,13 +91,15 @@ export default function Projects() {
                     width="35px"
                     height="35px"
                   />
-                  <img
-                    src={LinkLogo}
-                    className="logo hvr-wobble-top"
-                    width="35px"
-                    height="35px"
-                    style={{ marginLeft: "0.5rem" }}
-                  />
+                  <a style={{ cursor: "pointer" }} href="https://covid-data-tracker.herokuapp.com/" target="_blank">
+                    <img
+                      src={LinkLogo}
+                      className="logo hvr-wobble-top"
+                      width="35px"
+                      height="35px"
+                      style={{ marginLeft: "0.5rem" }}
+                    />
+                  </a>
                 </div>
                 {/* </Jello> */}
               </div>
@@ -116,15 +118,13 @@ export default function Projects() {
           <Fade right>
             <div className="project-info">
               <div style={{ width: "50%", padding: "2rem" }}>
-              <a style={{cursor: "pointer"}}>
-                <h2 className="hvr-wobble-top">CHAT APPLICATION</h2>
+                <a style={{ cursor: "pointer" }} href="https://pn-chat-app.herokuapp.com/" target="_blank">
+                  <h2 className="hvr-wobble-top">CHAT APPLICATION</h2>
                 </a>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
+                  A Node.js application that allows users to enter a display name and join chat rooms to chat with other users.
                 </p>
-
+                <p>Node.js | Web Socket | HTML | CSS | Heroku | Git</p>
                 {/* <Jello cascade> */}
                 <div style={{ display: "flex", marginTop: "1rem" }}>
                   <img
@@ -133,13 +133,15 @@ export default function Projects() {
                     width="35px"
                     height="35px"
                   />
-                  <img
-                    src={LinkLogo}
-                    className="logo hvr-wobble-top"
-                    width="35px"
-                    height="35px"
-                    style={{ marginLeft: "0.5rem" }}
-                  />
+                  <a style={{ cursor: "pointer" }} href="https://pn-chat-app.herokuapp.com/" target="_blank">
+                    <img
+                      src={LinkLogo}
+                      className="logo hvr-wobble-top"
+                      width="35px"
+                      height="35px"
+                      style={{ marginLeft: "0.5rem" }}
+                    />
+                  </a>
                 </div>
                 {/* </Jello> */}
               </div>
@@ -158,14 +160,13 @@ export default function Projects() {
           <Fade right>
             <div className="project-info">
               <div style={{ width: "50%", padding: "2rem" }}>
-              <a style={{cursor: "pointer"}}>
-                <h2 className="hvr-wobble-top">TRAILFINDER</h2>
+                <a style={{ cursor: "pointer" }} href="https://manny1206.github.io/Trailfinder//" target="_blank">
+                  <h2 className="hvr-wobble-top">TRAILFINDER</h2>
                 </a>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam
+                  A web application that locates bike trails around the address that user input.
                 </p>
+                <p>Angular | Firebase | Google Maps API | Adobe Illustrator | HTML | CSS</p>
                 <div style={{ display: "flex", marginTop: "1rem" }}>
                   <img
                     src={GithubLogo}
@@ -173,13 +174,95 @@ export default function Projects() {
                     width="35px"
                     height="35px"
                   />
+                  <a style={{ cursor: "pointer" }} href="https://manny1206.github.io/Trailfinder//" target="_blank">
+                    <img
+                      src={LinkLogo}
+                      className="logo hvr-wobble-top"
+                      width="35px"
+                      height="35px"
+                      style={{ marginLeft: "0.5rem" }}
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div
+                style={{ width: "50%", height: "100%", background: "#E0C5C5" }}
+              ></div>
+            </div>
+          </Fade>
+        </div>
+
+        <div className="project-container">
+          <Fade left>
+            <h2>2019</h2>
+          </Fade>
+          <Fade right>
+            <div className="project-info">
+              <div style={{ width: "50%", padding: "2rem" }}>
+                <a style={{ cursor: "pointer" }} href="http://www.ghibli-films.com.s3-website-us-east-1.amazonaws.com/" target="_blank">
+                  <h2 className="hvr-wobble-top">GHIBLI FILMS</h2>
+                </a>
+                <p>
+                  A web application that fetch and display Studio Ghibli movies info from an API and allows users to search for a movie.
+                </p>
+                <p>HTML | CSS | JavaScript | Studio Ghibli API | JSON</p>
+                <div style={{ display: "flex", marginTop: "1rem" }}>
                   <img
-                    src={LinkLogo}
+                    src={GithubLogo}
                     className="logo hvr-wobble-top"
                     width="35px"
                     height="35px"
-                    style={{ marginLeft: "0.5rem" }}
                   />
+                  <a style={{ cursor: "pointer" }} href="http://www.ghibli-films.com.s3-website-us-east-1.amazonaws.com/" target="_blank">
+                    <img
+                      src={LinkLogo}
+                      className="logo hvr-wobble-top"
+                      width="35px"
+                      height="35px"
+                      style={{ marginLeft: "0.5rem" }}
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div
+                style={{ width: "50%", height: "100%", background: "#E0C5C5" }}
+              ></div>
+            </div>
+          </Fade>
+        </div>
+
+        <div className="project-container">
+          <Fade left>
+            <h2>2019</h2>
+          </Fade>
+          <Fade right>
+            <div className="project-info">
+              <div style={{ width: "50%", padding: "2rem" }}>
+                <a style={{ cursor: "pointer" }} href="https://phungngo1020.github.io/Pomodoro-Timer/" target="_blank">
+                  <h2 className="hvr-wobble-top">POMODORO TIMER</h2>
+                </a>
+                <p>
+                  A countdown timer that follows the pomodoro technique of repeating a cycle of 25 minutes work and 5 minutes break.
+                </p>
+                <p>HTML | CSS | JavaScript</p>
+                <div style={{ display: "flex", marginTop: "1rem" }}>
+                  <img
+                    src={GithubLogo}
+                    className="logo hvr-wobble-top"
+                    width="35px"
+                    height="35px"
+                  />
+                  <a style={{ cursor: "pointer" }} href="https://phungngo1020.github.io/Pomodoro-Timer/" target="_blank">
+                    <img
+                      src={LinkLogo}
+                      className="logo hvr-wobble-top"
+                      width="35px"
+                      height="35px"
+                      style={{ marginLeft: "0.5rem" }}
+                    />
+                  </a>
                 </div>
               </div>
 
