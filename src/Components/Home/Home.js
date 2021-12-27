@@ -21,7 +21,7 @@ export default function Home() {
     }
 
     return (
-        <div className="home-container">
+        <div className="home-container" id="home">
             <Jump cascade>
                 <div style={{ height: "20%", width: "100%", marginTop: "16px" }}>
                     <img src={GithubLogo} className="logo" width="35px" style={{ marginLeft: "16px" }} />

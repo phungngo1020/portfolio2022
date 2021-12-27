@@ -13,15 +13,15 @@ export default function Navigation() {
                             <h3>HOME</h3>
                             <div className="active"></div>
                         </li>
-                        <li className="nav-item" style={{ marginTop: "2rem" }}>
+                        <li className="nav-item" style={{ marginTop: "1.5rem" }}>
                             <h3>ABOUT</h3>
                             <div className="inactive"></div>
                         </li>
-                        <li className="nav-item" style={{ marginTop: "2rem" }}>
+                        <li className="nav-item" style={{ marginTop: "1.5rem" }}>
                             <h3>PROJECTS</h3>
                             <div className="inactive"></div>
                         </li>
-                        <li className="nav-item" style={{ marginTop: "2rem" }}>
+                        <li className="nav-item" style={{ marginTop: "1.5rem" }}>
                             <h3>DESIGNS/ARTS</h3>
                             <div className="inactive"></div>
                         </li>

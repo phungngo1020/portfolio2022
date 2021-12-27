@@ -5,7 +5,7 @@ import Skills from './Skills';
 export default function About() {
 
     return (
-        <div className="d-flex flex-column" style={{width: "100vw"}}>
+        <div id="about" className="d-flex flex-column" style={{width: "100vw", minHeight: "100vh"}}>
             <AboutMe />
             {/* <AboutMe /> */}
             <Skills />
