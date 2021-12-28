@@ -28,36 +28,85 @@ export default function AboutMe() {
       </Fade>
 
       <Fade bottom>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", overflow: "hidden" }}>
           <div
             className="arts-display"
-            style={{ width: "70vw", height: "40vw", background: "#ffffff" }}
+            style={{
+              width: "70vw",
+              height: "40vw",
+              background: "#ffffff",
+              overflow: "hidden",
+            }}
           >
             {activeArt == 1 ? (
               <div
-                className="art-container"
-                style={{ width: "100%", height: "100%", background: "#E0C5C5" }}
+                className="art-container art-1"
+                style={{ width: "100%", height: "100%" }}
               ></div>
             ) : (
               ""
             )}
+
             {activeArt == 2 ? (
               <div
-                style={{ width: "100%", height: "100%", background: "#8E8E8E" }}
+                className="art-container art-2"
+                style={{ width: "100%", height: "100%" }}
               ></div>
             ) : (
               ""
             )}
             {activeArt == 3 ? (
               <div
-                style={{ width: "100%", height: "100%", background: "#E3E3E3" }}
+                className="art-container art-3"
+                style={{ width: "100%", height: "100%" }}
               ></div>
             ) : (
               ""
             )}
             {activeArt == 4 ? (
               <div
-                style={{ width: "100%", height: "100%", background: "#FFFFFF" }}
+                className="art-container art-4"
+                style={{ width: "100%", height: "100%" }}
+              ></div>
+            ) : (
+              ""
+            )}
+            {activeArt == 5 ? (
+              <div
+                className="art-container art-5"
+                style={{ width: "100%", height: "100%" }}
+              ></div>
+            ) : (
+              ""
+            )}
+            {activeArt == 6 ? (
+              <div
+                className="art-container art-6"
+                style={{ width: "100%", height: "100%" }}
+              ></div>
+            ) : (
+              ""
+            )}
+            {activeArt == 7 ? (
+              <div
+                className="art-container art-7"
+                style={{ width: "100%", height: "100%" }}
+              ></div>
+            ) : (
+              ""
+            )}
+            {activeArt == 8 ? (
+              <div
+                className="art-container art-8"
+                style={{ width: "100%", height: "100%" }}
+              ></div>
+            ) : (
+              ""
+            )}
+            {activeArt == 9 ? (
+              <div
+                className="art-container art-9"
+                style={{ width: "100%", height: "100%" }}
               ></div>
             ) : (
               ""
@@ -65,11 +114,13 @@ export default function AboutMe() {
           </div>
 
           <div style={{ marginLeft: "0.5rem" }}>
-            <div
-              id="artsPage"
-              className={activeArt == 1 ? "active" : "inactive"}
-              onClick={(e) => setActiveArt(1)}
-            ></div>
+            <div className="arts-hover">
+              <div
+                id="artsPage"
+                className={activeArt == 1 ? "active" : "inactive"}
+                onClick={(e) => setActiveArt(1)}
+              ></div>
+            </div>
             <div
               id="artsPage"
               className={activeArt == 2 ? "active" : "inactive"}
@@ -84,6 +135,31 @@ export default function AboutMe() {
               id="artsPage"
               className={activeArt == 4 ? "active" : "inactive"}
               onClick={(e) => setActiveArt(4)}
+            ></div>
+            <div
+              id="artsPage"
+              className={activeArt == 5 ? "active" : "inactive"}
+              onClick={(e) => setActiveArt(5)}
+            ></div>
+            <div
+              id="artsPage"
+              className={activeArt == 6 ? "active" : "inactive"}
+              onClick={(e) => setActiveArt(6)}
+            ></div>
+            <div
+              id="artsPage"
+              className={activeArt == 7 ? "active" : "inactive"}
+              onClick={(e) => setActiveArt(7)}
+            ></div>
+            <div
+              id="artsPage"
+              className={activeArt == 8 ? "active" : "inactive"}
+              onClick={(e) => setActiveArt(8)}
+            ></div>
+            <div
+              id="artsPage"
+              className={activeArt == 9 ? "active" : "inactive"}
+              onClick={(e) => setActiveArt(9)}
             ></div>
           </div>
         </div>

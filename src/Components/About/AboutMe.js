@@ -3,9 +3,9 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 import RubberBand from "react-reveal/RubberBand";
 
-import GithubLogo from '../../Assets/github_logo.png';
-import GmailLogo from '../../Assets/gmail_logo.png';
-import LinkedinLogo from '../../Assets/linkedin_logo.png';
+import GithubLogo from "../../Assets/github_logo.png";
+import GmailLogo from "../../Assets/gmail_logo.png";
+import LinkedinLogo from "../../Assets/linkedin_logo.png";
 import AboutMeHeader from "../../Assets/aboutme_header.svg";
 
 export default function AboutMe() {
@@ -51,27 +51,36 @@ export default function AboutMe() {
 
             <h4 style={{ marginTop: "2rem" }}>PHUNGNGO1020@GMAIL.COM</h4>
 
-            <RubberBand bottom cascade>
+            {/* <RubberBand bottom cascade> */}
             <div style={{ height: "20%", width: "100%", marginTop: "1rem" }}>
-              <img
-                src={GithubLogo}
-                className="logo"
-                width="35px"
-              />
-              <img
-                src={GmailLogo}
-                className="logo"
-                width="35px"
-                style={{ marginLeft: "10px" }}
-              />
-              <img
-                src={LinkedinLogo}
-                className="logo"
-                width="35px"
-                style={{ marginLeft: "10px" }}
-              />
+              <a href="https://github.com/phungngo1020" target="_blank">
+                <img
+                  src={GithubLogo}
+                  className="logo hvr-wobble-top"
+                  width="35px"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/phung-ngo-65610a15b/"
+                target="_blank"
+              >
+                <img
+                  src={LinkedinLogo}
+                  className="logo hvr-wobble-top"
+                  width="35px"
+                  style={{ marginLeft: "10px" }}
+                />
+              </a>
+              <a href="mailto: phungngo1020@gmail.com" target="_blank">
+                <img
+                  src={GmailLogo}
+                  className="logo hvr-wobble-top"
+                  width="35px"
+                  style={{ marginLeft: "10px" }}
+                />
+              </a>
             </div>
-            </RubberBand>
+            {/* </RubberBand> */}
           </div>
         </div>
       </div>

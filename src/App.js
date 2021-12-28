@@ -182,8 +182,13 @@ function App() {
         <About />
         <Projects />
         <DesignsArts />
-
-        <div style={{ margin: "0 0 2rem 2rem", display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            margin: "0 0 2rem 2rem",
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <img src={Footer} height="35rem" />
           &nbsp;&nbsp;
           <img src={Name} height="35rem" className="hvr-wobble-top" />
