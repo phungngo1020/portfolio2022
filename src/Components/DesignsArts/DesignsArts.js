@@ -21,9 +21,9 @@ export default function AboutMe() {
     >
       <Fade right>
         <div
-          style={{ width: "72vw", display: "flex", justifyContent: "right" }}
+          style={{ width: "100vw", display: "flex", justifyContent: "flex-end" }}
         >
-          <img src={ArtsHeader} style={{ alignSelf: "right" }} />
+          <img src={ArtsHeader} style={{ marginRight: "10vw" }} className=" section-header"/>
         </div>
       </Fade>
 
@@ -31,12 +31,6 @@ export default function AboutMe() {
         <div style={{ display: "flex", overflow: "hidden" }}>
           <div
             className="arts-display"
-            style={{
-              width: "70vw",
-              height: "40vw",
-              background: "#ffffff",
-              overflow: "hidden",
-            }}
           >
             {activeArt == 1 ? (
               <div

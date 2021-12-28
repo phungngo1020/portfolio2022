@@ -22,16 +22,14 @@ export default function AboutMe() {
               <img
                 src={AboutMeHeader}
                 height="82"
-                style={{ marginLeft: "3rem" }}
-                className="hvr-wobble-top"
+                style={{ marginLeft: "5vw" }}
+                className="hvr-wobble-top section-header"
               />
               <div
                 style={{
-                  width: "50vw",
-                  borderBottom: "5px dashed #707070",
-                  height: "60px",
                   zIndex: 3,
                 }}
+                className="dash-line"
               ></div>
             </div>
           </div>

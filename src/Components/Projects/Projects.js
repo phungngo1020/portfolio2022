@@ -20,7 +20,8 @@ export default function Projects() {
           <img
             src={ProjectsHeader}
             height="82"
-            style={{ marginLeft: "3rem" }}
+            style={{ marginLeft: "5vw" }}
+            className=" section-header"
           />
         </div>
       </Fade>
@@ -32,7 +33,7 @@ export default function Projects() {
           </Fade>
           <Fade right>
             <div className="project-info">
-              <div style={{ width: "50%", padding: "2rem" }}>
+              <div style={{ width: "50%", padding: "2rem" }} className="project-text">
                 <a style={{ cursor: "pointer" }} href="https://pn-template-shop.herokuapp.com/" target="_blank">
                   <h2 className="hvr-wobble-top">PORTFOLIO SHOP</h2>
                 </a>
@@ -41,7 +42,7 @@ export default function Projects() {
                 </p>
                 <p>Node.js | Express | MongoDB | Stripe | Pagination | Heroku | Git</p>
                 {/* <Jello cascade> */}
-                <div style={{ display: "flex", marginTop: "1rem" }}>
+                <div style={{ display: "flex", marginTop: "1rem" }} className="project-photo">
                   <a style={{ cursor: "pointer" }} href="https://pn-template-shop.herokuapp.com/" target="_blank">
                     <img
                       src={LinkLogo}
@@ -53,7 +54,7 @@ export default function Projects() {
                 </div>
               </div>
               <div
-                className="template-shop"
+                className="template-shop project-photo"
                 style={{ width: "50%", height: "100%"}}
               ></div>
             </div>
@@ -66,7 +67,7 @@ export default function Projects() {
           </Fade>
           <Fade right>
             <div className="project-info">
-              <div style={{ width: "50%", padding: "2rem" }}>
+              <div style={{ width: "50%", padding: "2rem" }} className="project-text">
                 <a style={{ cursor: "pointer" }} href="https://covid-data-tracker.herokuapp.com/" target="_blank">
                   <h2 className="hvr-wobble-top">COVID-19 TRACKER</h2>
                 </a>
@@ -90,7 +91,7 @@ export default function Projects() {
               </div>
 
               <div
-                className="covid-tracker"
+                className="covid-tracker project-photo"
                 style={{ width: "50%", height: "100%" }}
               ></div>
             </div>
@@ -103,7 +104,7 @@ export default function Projects() {
           </Fade>
           <Fade right>
             <div className="project-info">
-              <div style={{ width: "50%", padding: "2rem" }}>
+              <div style={{ width: "50%", padding: "2rem" }} className="project-text">
                 <a style={{ cursor: "pointer" }} href="https://pn-chat-app.herokuapp.com/" target="_blank">
                   <h2 className="hvr-wobble-top">CHAT APPLICATION</h2>
                 </a>
@@ -126,7 +127,7 @@ export default function Projects() {
               </div>
 
               <div
-                className="chat-app"
+                className="chat-app project-photo"
                 style={{ width: "50%", height: "100%" }}
               ></div>
             </div>
@@ -139,7 +140,7 @@ export default function Projects() {
           </Fade>
           <Fade right>
             <div className="project-info">
-              <div style={{ width: "50%", padding: "2rem" }}>
+              <div style={{ width: "50%", padding: "2rem" }} className="project-text">
                 <a style={{ cursor: "pointer" }} href="https://manny1206.github.io/Trailfinder//" target="_blank">
                   <h2 className="hvr-wobble-top">TRAILFINDER</h2>
                 </a>
@@ -160,7 +161,7 @@ export default function Projects() {
               </div>
 
               <div
-                className="trailfinder"
+                className="trailfinder project-photo"
                 style={{ width: "50%", height: "100%" }}
               ></div>
             </div>
@@ -173,7 +174,7 @@ export default function Projects() {
           </Fade>
           <Fade right>
             <div className="project-info">
-              <div style={{ width: "50%", padding: "2rem" }}>
+              <div style={{ width: "50%", padding: "2rem" }} className="project-text">
                 <a style={{ cursor: "pointer" }} href="http://www.ghibli-films.com.s3-website-us-east-1.amazonaws.com/" target="_blank">
                   <h2 className="hvr-wobble-top">GHIBLI FILMS</h2>
                 </a>
@@ -194,7 +195,7 @@ export default function Projects() {
               </div>
 
               <div
-                className="ghibli-films"
+                className="ghibli-films project-photo"
                 style={{ width: "50%", height: "100%" }}
               ></div>
             </div>
@@ -207,7 +208,7 @@ export default function Projects() {
           </Fade>
           <Fade right>
             <div className="project-info">
-              <div style={{ width: "50%", padding: "2rem" }}>
+              <div style={{ width: "50%", padding: "2rem" }} className="project-text">
                 <a style={{ cursor: "pointer" }} href="https://phungngo1020.github.io/Pomodoro-Timer/" target="_blank">
                   <h2 className="hvr-wobble-top">POMODORO TIMER</h2>
                 </a>
@@ -237,7 +238,7 @@ export default function Projects() {
               </div>
 
               <div
-                className="pomodoro-timer"
+                className="pomodoro-timer project-photo"
                 style={{ width: "50%", height: "100%" }}
               ></div>
             </div>

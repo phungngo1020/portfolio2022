@@ -4,6 +4,7 @@ import GithubLogo from "../../Assets/github_logo.png";
 import GmailLogo from "../../Assets/gmail_logo.png";
 import LinkedinLogo from "../../Assets/linkedin_logo.png";
 import HeaderText from "../../Assets/header_text.svg";
+import HeaderTextMobile from "../../Assets/header_text_mobile.svg";
 
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
@@ -18,20 +19,19 @@ export default function Home() {
   const [emailHover, setEmailHover] = useState(false);
   const [Copied, setCopied] = useState(false);
 
-
   return (
     <div className="home-container" id="home">
       <div
         style={{
           height: "20%",
-          width: "100%",
+          width: "100vw",
           marginTop: "16px",
           display: "flex",
           alignItems: "flex-start",
         }}
       >
         <Jump cascade>
-          <div style={{display: "flex"}}>
+          <div style={{ display: "flex" }}>
             <a href="https://github.com/phungngo1020" target="_blank">
               <img
                 src={GithubLogo}
@@ -52,8 +52,7 @@ export default function Home() {
               />
             </a>
             <a target="_blank">
-              
-                  <img
+              <img
                 src={GmailLogo}
                 className="logo"
                 width="35px"
@@ -61,23 +60,35 @@ export default function Home() {
                 onMouseOver={(e) => setEmailHover(true)}
                 onMouseOut={(e) => setEmailHover(false)}
                 onClick={(e) => {
-                    navigator.clipboard.writeText("phungngo1020@gmail.com")
-                    setCopied(true);
-                    setTimeout(function () {
-                        setCopied(false);
-                    }, 3000);
+                  navigator.clipboard.writeText("phungngo1020@gmail.com");
+                  setCopied(true);
+                  setTimeout(function () {
+                    setCopied(false);
+                  }, 3000);
                 }}
               />
-              <div style={{overflow: "hidden"}}>
-              {/* <p className="copied-show">Copied!</p> */}
-                <p className={Copied ? "copied-show" : "copied-hide"}>Copied!</p>
+              <div style={{ overflow: "hidden" }}>
+                {/* <p className="copied-show">Copied!</p> */}
+                <p className={Copied ? "copied-show" : "copied-hide"}>
+                  Copied!
+                </p>
               </div>
             </a>
           </div>
         </Jump>
-        <div style={{height: "35px", display: "flex", alignItems: "center", marginLeft: "0.8rem"}}>
-        {/* <p className="email-show">phungngo1020@gmail.com</p> */}
-            <p className={emailHover ? "email-show" : "email-hide"}>phungngo1020@gmail.com</p>
+        <div
+          className="full-email"
+          style={{
+            height: "35px",
+            display: "flex",
+            alignItems: "center",
+            marginLeft: "0.8rem",
+          }}
+        >
+          {/* <p className="email-show">phungngo1020@gmail.com</p> */}
+          <p className={emailHover ? "email-show" : "email-hide"}>
+            phungngo1020@gmail.com
+          </p>
         </div>
       </div>
 
@@ -103,9 +114,17 @@ export default function Home() {
             <h2>PHUNG NGO</h2>
           </Bounce>
           {/* <h1>UX/FRONT END DEVELOPER</h1> */}
-          <Bounce bottom cascade>
-            <img src={HeaderText} />
-          </Bounce>
+          <div className="main-header-full">
+            <Bounce bottom cascade>
+              <img src={HeaderText} />
+            </Bounce>
+          </div>
+
+          <div className="main-header-mobile">
+            <Bounce bottom cascade>
+              <img src={HeaderTextMobile} height="130" />
+            </Bounce>
+          </div>
         </div>
       </div>
     </div>

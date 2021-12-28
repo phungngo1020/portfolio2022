@@ -40,6 +40,7 @@ a {
 .body-container {
   /* transform: translateY(-200px);  */
   z-index: 1;
+  overflow: hidden;
 }
 
 .loading-container {
@@ -163,6 +164,7 @@ ul {
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
 }
+
 @keyframes open {
   0% {
     clip-path: polygon(0 0, 0% 0%, 0% 100%, 0% 100%);
@@ -273,7 +275,7 @@ ul {
 }
 .project-info {
   width: 65vw;
-  height: 35vh;
+  min-height: 35vh;
   border: 7px solid #707070;
   display: flex;
   justify-content: space-between;
@@ -319,6 +321,10 @@ ul {
 }
 .arts-display {
   border: 7px solid #707070;
+  width: 70vw;
+  height: 40vw;
+  background: #ffffff;
+  overflow: hidden;
 }
 .about-card h4 {
   font-size: 1.2rem;
@@ -552,4 +558,114 @@ ul {
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}
+
+.menu-toggle {
+  display: none;
+}
+.menu-logo:hover {
+  cursor: pointer;
+}
+.main-header-mobile {
+  display: none;
+}
+.dash-line {
+  width: 50vw;
+  border-bottom: 5px dashed #707070;
+  height: 60px;
+}
+.dash-line-top {
+  width: 50vw;
+  border-top: 5px dashed #707070;
+  height: 60px;
+}
+.footer-full {
+  display: flex;
+}
+.footer-mobile {
+  display: none;
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 1000px) {
+  .menu-toggle {
+    position: fixed;
+    top: 0;
+    margin: 1rem 1rem 0 0;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .full-menu {
+    display: none;
+  }
+  .full-email {
+    display: none;
+  }
+  .main-header-full {
+    display: none;
+  }
+  .main-header-mobile {
+    display: block;
+  }
+  .section-header{
+    height: 4rem;
+  } 
+  .dash-line {
+    border-bottom: 4px dashed #707070;
+    height: 3rem;
+    width: 60vw;
+  }
+  .dash-line-top {
+    border-top: 4px dashed #707070;
+    height: 3rem;
+    width: 60vw;
+  }
+  .skills-list {
+    display: none;
+  }
+  .skills-list-mobile {
+    display: block;
+  }
+  .skills-list-mobile {
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+  }
+  .skills-list-mobile img {
+    margin-left: 1.5rem;
+  }
+  .project-photo {
+    display: none;
+  }
+  .project-text {
+    width: 100% !important;
+  }
+  .project-container {
+    width: 87vw;
+  }
+  .project-info {
+    min-height: 35vh;
+    padding: 0.2rem;
+  }
+  .project-container h2 {
+    font-size: 2rem;
+  }
+
+  .arts-display {
+    border: 5px solid #707070;
+    width: 90vw;
+    height: 55vw;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  .footer-full {
+    display: none;
+  }
+  .footer-mobile {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

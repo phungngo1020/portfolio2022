@@ -22,6 +22,8 @@ import N from "./Assets/Loading/N.svg";
 import G from "./Assets/Loading/G.svg";
 import Footer from "./Assets/footer.svg";
 import Name from "./Assets/name.svg";
+import MenuIcon from "./Assets/menu_icon.svg";
+import CloseIcon from "./Assets/close_icon.svg";
 
 import GithubLogo from "./Assets/github_logo.png";
 import GmailLogo from "./Assets/gmail_logo.png";
@@ -35,6 +37,8 @@ function App() {
 
   const [bgColor, setBgColor] = useState("App-yellow");
 
+  const [showMenu, setShowMenu] = useState(false);
+
   function updateColor(color) {
     console.log("bg = " + color);
     setBgColor(color);
@@ -46,6 +50,9 @@ function App() {
   }
 
   useEffect(() => {
+    var width = window.innerWidth;
+    console.log("width = " + width);
+
     console.log("loading...");
     setTimeout(loading, 2500);
   });
@@ -68,25 +75,21 @@ function App() {
 
     // about: yOffset >= windowheight
     if (yOffset < windowHeight) {
-      console.log("...Home");
       SetActiveSection("Home");
     }
 
     // about: yOffset >= windowheight
     if (yOffset > windowHeight && yOffset < 2 * windowHeight) {
-      console.log("...About");
       SetActiveSection("About");
     }
 
     // projects: yOffset >= 2 * windowheight
     if (yOffset > 2 * windowHeight && yOffset < pageHeight - windowHeight) {
-      console.log("...Projects");
       SetActiveSection("Projects");
     }
 
     // projects: yOffset >= pageHeight-windowheight
     if (yOffset >= pageHeight - windowHeight * 1.2) {
-      console.log("...Designs/Arts");
       SetActiveSection("Arts");
     }
   };
@@ -134,8 +137,13 @@ function App() {
         style={{ width: "100vw", display: "flex", justifyContent: "flex-end" }}
       >
         <div
-          className="nav-bar"
-          style={{ position: "fixed", top: 0, marginTop: "50px", zIndex: "2" }}
+          className="nav-bar full-menu"
+          style={{
+            position: "fixed",
+            top: 0,
+            marginTop: "50px",
+            zIndex: "2",
+          }}
         >
           <Bounce right cascade>
             <ul style={{ height: "150px", textAlign: "right" }}>
@@ -176,6 +184,85 @@ function App() {
             </ul>
           </Bounce>
         </div>
+
+        <div className="menu-toggle">
+          {showMenu == true ? (
+            <img
+              src={CloseIcon}
+              width="30"
+              height="30"
+              onClick={(e) => {
+                console.log("show menu");
+                setShowMenu(!showMenu);
+              }}
+              className="menu-logo"
+            />
+          ) : (
+            <img
+              src={MenuIcon}
+              width="30"
+              height="30"
+              onClick={(e) => {
+                console.log("show menu");
+                setShowMenu(!showMenu);
+              }}
+              className="menu-logo"
+            />
+          )}
+        </div>
+
+        {showMenu == true ? (
+          <div
+            style={{
+              position: "fixed",
+              top: 0,
+              marginTop: "70px",
+              marginRight: "1rem",
+              zIndex: "2",
+            }}
+          >
+            <Bounce right cascade>
+              <ul style={{ height: "150px", textAlign: "right" }}>
+                <li className="nav-item">
+                  <a href="#home">
+                    <h3>HOME</h3>
+                  </a>
+                  <div
+                    className={activeSection == "Home" ? "active" : "inactive"}
+                  ></div>
+                </li>
+                <li className="nav-item" style={{ marginTop: "1.5rem" }}>
+                  <a href="#about">
+                    <h3>ABOUT</h3>
+                  </a>
+                  <div
+                    className={activeSection == "About" ? "active" : "inactive"}
+                  ></div>
+                </li>
+                <li className="nav-item" style={{ marginTop: "1.5rem" }}>
+                  <a href="#projects">
+                    <h3>PROJECTS</h3>
+                  </a>
+                  <div
+                    className={
+                      activeSection == "Projects" ? "active" : "inactive"
+                    }
+                  ></div>
+                </li>
+                <li className="nav-item" style={{ marginTop: "1.5rem" }}>
+                  <a href="#arts">
+                    <h3>DESIGNS/ARTS</h3>
+                  </a>
+                  <div
+                    className={activeSection == "Arts" ? "active" : "inactive"}
+                  ></div>
+                </li>
+              </ul>
+            </Bounce>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
       <div className="body-container">
         <Home />
@@ -185,13 +272,25 @@ function App() {
         <div
           style={{
             margin: "0 0 2rem 2rem",
-            display: "flex",
             alignItems: "center",
           }}
+          className="footer-full"
         >
           <img src={Footer} height="35rem" />
           &nbsp;&nbsp;
           <img src={Name} height="35rem" className="hvr-wobble-top" />
+        </div>
+
+        <div
+          style={{
+            margin: "0 2rem 2rem 2rem",
+            alignItems: "center",
+          }}
+          className="footer-mobile"
+        >
+          <img src={Footer} height="25rem" />
+          &nbsp;&nbsp;
+          <img src={Name} height="25rem" className="hvr-wobble-top" />
         </div>
       </div>
     </div>

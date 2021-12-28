@@ -34,14 +34,16 @@ export default function Skills() {
           >
             <div
               style={{
-                width: "70vw",
-                borderTop: "5px dashed #707070",
-                height: "60px",
                 zIndex: 3,
               }}
+              className="dash-line-top"
             ></div>
 
-            <img src={SkillsHeader} height="82" className="hvr-wobble-bottom" />
+            <img
+              src={SkillsHeader}
+              height="82"
+              className="hvr-wobble-bottom section-header"
+            />
           </div>
         </Fade>
 
@@ -72,6 +74,39 @@ export default function Skills() {
             </div>
           </RubberBand>
         </div>
+      </div>
+
+      <div className="skills-list-mobile">
+        <RubberBand bottom cascade>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <img src={ReactText} className="skill-text" height="50" />
+            <img src={AngularText} className="skill-text" height="50" />
+            <img src={AdobeXDText} className="skill-text" height="50" />
+          </div>
+        </RubberBand>
+
+        <RubberBand bottom cascade>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <img src={SQLText} className="skill-text" height="50"/>
+            <img src={CText} className="skill-text" height="50" />
+            <img src={DynamoDBText} className="skill-text" height="50" />
+            <img src={NodeJSText} className="skill-text" height="50" />
+          </div>
+        </RubberBand>
+
+        <RubberBand bottom cascade>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <img src={GitText} className="skill-text" height="50" />
+          </div>
+        </RubberBand>
+
+        <RubberBand bottom cascade>
+          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <img src={SassText} className="skill-text" height="50" />
+            <img src={BootstrapText} className="skill-text" height="50" />
+            <img src={JavaText} className="skill-text" height="50" />
+          </div>
+        </RubberBand>
       </div>
     </Fade>
   );
