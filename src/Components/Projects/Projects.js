@@ -26,7 +26,7 @@ export default function Projects() {
         </div>
       </Fade>
 
-      <div style={{ borderLeft: "5px dashed #707070", paddingLeft: "2rem" }}>
+      <div style={{ borderLeft: "5px dashed #707070", paddingLeft: "2vw" }}>
         <div className="project-container">
           <Fade left>
             <h2>2021</h2>

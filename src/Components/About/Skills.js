@@ -11,6 +11,8 @@ import SQLText from "../../Assets/Skills/sql.svg";
 import CText from "../../Assets/Skills/c.svg";
 import DynamoDBText from "../../Assets/Skills/dynamodb.svg";
 import GitText from "../../Assets/Skills/git.svg";
+import Git1 from "../../Assets/Skills/git-1.svg";
+import Git2 from "../../Assets/Skills/git-2.svg";
 import AdobeXDText from "../../Assets/Skills/adobexd.svg";
 import SassText from "../../Assets/Skills/sass.svg";
 import BootstrapText from "../../Assets/Skills/bootstrap.svg";
@@ -82,26 +84,12 @@ export default function Skills() {
             <img src={ReactText} className="skill-text" height="50" />
             <img src={AngularText} className="skill-text" height="50" />
             <img src={AdobeXDText} className="skill-text" height="50" />
-          </div>
-        </RubberBand>
-
-        <RubberBand bottom cascade>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
             <img src={SQLText} className="skill-text" height="50"/>
             <img src={CText} className="skill-text" height="50" />
             <img src={DynamoDBText} className="skill-text" height="50" />
             <img src={NodeJSText} className="skill-text" height="50" />
-          </div>
-        </RubberBand>
-
-        <RubberBand bottom cascade>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
-            <img src={GitText} className="skill-text" height="50" />
-          </div>
-        </RubberBand>
-
-        <RubberBand bottom cascade>
-          <div style={{ display: "flex", flexWrap: "wrap" }}>
+            <img src={Git1} className="skill-text" height="50" />
+            <img src={Git2} className="skill-text" height="50" />
             <img src={SassText} className="skill-text" height="50" />
             <img src={BootstrapText} className="skill-text" height="50" />
             <img src={JavaText} className="skill-text" height="50" />

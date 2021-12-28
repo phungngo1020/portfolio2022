@@ -582,6 +582,9 @@ ul {
 .skills-list-mobile {
   display: none;
 }
+.arts-header {
+  margin-right: 15vw; 
+}
 .footer-full {
   display: flex;
 }
@@ -611,10 +614,11 @@ ul {
     display: none;
   }
   .main-header-mobile {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
   .section-header{
-    height: 4rem;
+    height: 3.5rem;
   } 
   .dash-line {
     border-bottom: 4px dashed #707070;
@@ -646,11 +650,11 @@ ul {
     width: 100% !important;
   }
   .project-container {
-    width: 87vw;
+    width: 90vw;
   }
   .project-info {
     min-height: 35vh;
-    padding: 0.2rem;
+    padding: 0.1rem;
   }
   .project-container h2 {
     font-size: 2rem;
@@ -670,5 +674,9 @@ ul {
   .footer-mobile {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .arts-header {
+    margin-right: 5vw;
   }
 }

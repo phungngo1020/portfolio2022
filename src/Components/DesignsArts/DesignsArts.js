@@ -23,7 +23,7 @@ export default function AboutMe() {
         <div
           style={{ width: "100vw", display: "flex", justifyContent: "flex-end" }}
         >
-          <img src={ArtsHeader} style={{ marginRight: "10vw" }} className=" section-header"/>
+          <img src={ArtsHeader} className=" section-header arts-header"/>
         </div>
       </Fade>
 

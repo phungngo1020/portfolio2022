@@ -5,6 +5,9 @@ import GmailLogo from "../../Assets/gmail_logo.png";
 import LinkedinLogo from "../../Assets/linkedin_logo.png";
 import HeaderText from "../../Assets/header_text.svg";
 import HeaderTextMobile from "../../Assets/header_text_mobile.svg";
+import Header1 from "../../Assets/MainHeader/header-1.svg";
+import Header2 from "../../Assets/MainHeader/header-2.svg";
+import Header3 from "../../Assets/MainHeader/header-3.svg";
 
 import Fade from "react-reveal/Fade";
 import Jump from "react-reveal/Jump";
@@ -122,7 +125,9 @@ export default function Home() {
 
           <div className="main-header-mobile">
             <Bounce bottom cascade>
-              <img src={HeaderTextMobile} height="130" />
+              <img src={Header1} height="60" />
+              <img src={Header2} height="60" />
+              <img src={Header3} height="60" />
             </Bounce>
           </div>
         </div>
