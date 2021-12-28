@@ -579,6 +579,9 @@ ul {
   border-top: 5px dashed #707070;
   height: 60px;
 }
+.skills-list-mobile {
+  display: none;
+}
 .footer-full {
   display: flex;
 }
