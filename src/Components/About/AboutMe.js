@@ -45,12 +45,12 @@ export default function AboutMe() {
         >
           <div className="about-card" style={{ padding: "7rem 5rem" }}>
             <h4>
-              I’M A UX ENGINEER/FRONT END WITH A STRONG PASSION FOR WEB DESIGN,
+              I’M A UX ENGINEER/FRONT END DEVELOPER WITH A STRONG PASSION FOR WEB DESIGN,
               ANIMATION AND DEVELOPING MODERN WEB APPLICATIONS.
             </h4>
             <h4>I ALSO ENJOY DRAWING AND INTERIOR DESIGN ON MY FREE TIME.</h4>
             <h4>
-              CHECK OUT SOME OF MY DRAWINGS &nbsp;
+              CHECK OUT SOME OF MY ARTS &nbsp;
               <a href="#arts" style={{ color: "#9a9a9a" }}>
                 BELOW
               </a>
