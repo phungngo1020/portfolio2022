@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navigation from './Navigation';
 
 import ArtIcon from '../assets/Home/art.png';
@@ -28,6 +30,11 @@ import Linkedin from '../assets/Home/Linkedin.svg';
 import Email from '../assets/Home/Email.svg';
 
 const Home = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <div className="home-wrapper">
             <Navigation />
@@ -92,7 +99,7 @@ const Home = () => {
                 <div className="contacts">
                     <img src={ContactsIcon} alt="" width="40" id="" className="mt-2"/>
                     <img src={Contacts} alt="Contacts" height="70" className="mt-2"  id="h2"/>
-                    <a href="https://www.linkedin.com/in/phung-ngo-65610a15b/" target="_blank">
+                    <a href="https://www.linkedin.com/in/phung-ngo-65610a15b/" target="_blank" rel="noreferrer">
                         <img src={Linkedin} alt="LinkedIn" height="30" className="mt-2" id="h3"/>
                     </a>
                     <img src={Email} alt="phungngo1020@gmail.com" height="30" className="mt-1" id="h3"/>
