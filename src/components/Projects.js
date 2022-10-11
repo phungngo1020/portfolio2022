@@ -53,7 +53,7 @@ const Projects = () => {
                             A timer that can be utilized for the Pomodoro studying technique.
                         </p>
                         <p>HTML | CSS | JavaScript | ES6</p>
-                        <a href="https://phungngo1020.github.io/Pomodoro-Timer/" target="_blank" className="project-link">
+                        <a href="https://phungngo1020.github.io/Pomodoro-Timer/" target="_blank" rel="noreferrer" className="project-link">
                             <img src={Visit} height="25" alt="Visit" id="visit"/>
                         </a>
                     </div>
@@ -75,7 +75,7 @@ const Projects = () => {
                             A Node.js chat application where users can enter chat rooms.
                         </p>
                         <p>Node.js | Web Socket | HTML | CSS | Git</p>
-                        <a href="https://pn-chat-app.herokuapp.com/" target="_blank" className="project-link">
+                        <a href="https://pn-chat-app.herokuapp.com/" target="_blank" rel="noreferrer" className="project-link">
                             <img src={Visit} height="25" alt="Visit" id="visit"/>
                         </a>
                     </div>
@@ -101,12 +101,11 @@ const Projects = () => {
                             A React application that displays live COVID-19 data and compare countrires' data.
                         </p>
                         <p>React | Material UI | Charts.js | HTML | CSS | REST APIs | Git</p>
-                        <a href="https://covid-data-tracker.herokuapp.com/" target="_blank" className="project-link">
+                        <a href="https://covid-data-tracker.herokuapp.com/" target="_blank" rel="noreferrer" className="project-link">
                             <img src={Visit} height="25" alt="Visit"/>
                         </a>
                     </div>
                 </div>
-                <img src={Abstract6} alt="" height="35" width="35" id="abstractLeft" />
             </div>
 
             <div className="project-divider">
@@ -124,7 +123,7 @@ const Projects = () => {
                             A website where users can search and see Ghibli films summary.
                         </p>
                         <p>HTML | CSS | JavaScript | Studio Ghibli API | JSON</p>
-                        <a href="http://www.ghibli-films.com.s3-website-us-east-1.amazonaws.com/" target="_blank" className="project-link">
+                        <a href="http://www.ghibli-films.com.s3-website-us-east-1.amazonaws.com/" target="_blank" rel="noreferrer" className="project-link">
                             <img src={Visit} height="25" alt="Visit"/>
                         </a>
                     </div>
@@ -150,7 +149,7 @@ const Projects = () => {
                             A simple e-commerce website where users can purchase website templates.
                         </p>
                         <p>Node.js | Express | MongoDB | Stripe | Pagination | Git</p>
-                        <a href="https://pn-template-shop.herokuapp.com/" target="_blank" className="project-link">
+                        <a href="https://pn-template-shop.herokuapp.com/" target="_blank" rel="noreferrer" className="project-link">
                             <img src={Visit} height="25" alt="Visit"/>
                         </a>
                     </div>
@@ -158,7 +157,7 @@ const Projects = () => {
             </div>
 
             <div className="project-divider">
-                <img src={Abstract5} alt="" height="35" width="35" id="abstractRight" />
+                <img src={Abstract6} alt="" height="35" width="35" id="abstractLeft" />
                 <img src={PatternIcon} width="35" alt="" id="divider"/>
             </div>
 
