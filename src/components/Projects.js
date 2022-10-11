@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Navigation from './Navigation';
 import RocketIcon from '../assets/Projects/rocket.png';
@@ -9,7 +10,6 @@ import TemplatesShop from '../assets/Projects/TemplatesShop.svg';
 import GhibliFilms from '../assets/Projects/GhibliFilms.svg';
 import ChatApp from '../assets/Projects/ChatApp.svg';
 import Visit from '../assets/Projects/Visit.svg';
-import RightArrow from '../assets/Projects/right-arrow-2.png';
 import Proj1of5 from '../assets/Projects/1-5.svg';
 import Proj2of5 from '../assets/Projects/2-5.svg';
 import Proj3of5 from '../assets/Projects/3-5.svg';
@@ -23,6 +23,12 @@ import Abstract5 from '../assets/Home/abstract-5.png';
 import Abstract6 from '../assets/Home/abstract-6.png';
 
 const Projects = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <div className="projects-wrapper">
             <Navigation />
@@ -78,13 +84,18 @@ const Projects = () => {
                 </div>
             </div>
 
+            <div className="project-divider">
+                <img src={Abstract3} alt="" height="35" width="35" id="abstractRight" />
+                <img src={PatternIcon} width="35" alt="" id="divider"/>
+            </div>
+
             {/* https://covid-data-tracker.herokuapp.com/ */}
             <div className="project-wrapper-r">
                 <div className="project-content">
                     <div className="project-preview preview-5">
                     </div>
                     <div className="project-summary">
-                        <img src={Proj5of5} alt="5 out of 5"  id="proj-num"/>
+                        <img src={Proj3of5} alt="3 out of 5"  id="proj-num"/>
                         <img src={CovidTracker} alt="" height="50" className="mt-2 mb-1" id="h3"/>
                         <p>
                             A React application that displays live COVID-19 data and compare countrires' data.
@@ -96,30 +107,6 @@ const Projects = () => {
                     </div>
                 </div>
                 <img src={Abstract6} alt="" height="35" width="35" id="abstractLeft" />
-            </div>
-
-            <div className="project-divider">
-                <img src={Abstract3} alt="" height="35" width="35" id="abstractRight" />
-                <img src={PatternIcon} width="35" alt="" id="divider"/>
-            </div>
-
-            {/* https://pn-template-shop.herokuapp.com/ */}
-            <div className="project-wrapper-r">
-                <div className="project-content">
-                    <div className="project-preview preview-3">
-                    </div>
-                    <div className="project-summary">
-                        <img src={Proj3of5} alt="3 out of 5"  id="proj-num"/>
-                        <img src={TemplatesShop} alt="" height="50" className="mt-2 mb-1" id="h3"/>
-                        <p>
-                            A simple e-commerce website where users can purchase website templates.
-                        </p>
-                        <p>Node.js | Express | MongoDB | Stripe | Pagination | Git</p>
-                        <a href="https://pn-template-shop.herokuapp.com/" target="_blank" className="project-link">
-                            <img src={Visit} height="25" alt="Visit"/>
-                        </a>
-                    </div>
-                </div>
             </div>
 
             <div className="project-divider">
@@ -142,6 +129,30 @@ const Projects = () => {
                         </a>
                     </div>
                     <div className="project-preview preview-4">
+                    </div>
+                </div>
+            </div>
+
+            <div className="project-divider">
+                <img src={Abstract5} alt="" height="35" width="35" id="abstractRight" />
+                <img src={PatternIcon} width="35" alt="" id="divider"/>
+            </div>
+
+            {/* https://pn-template-shop.herokuapp.com/ */}
+            <div className="project-wrapper-r">
+                <div className="project-content">
+                    <div className="project-preview preview-3">
+                    </div>
+                    <div className="project-summary">
+                        <img src={Proj5of5} alt="5 out of 5"  id="proj-num"/>
+                        <img src={TemplatesShop} alt="" height="50" className="mt-2 mb-1" id="h3"/>
+                        <p>
+                            A simple e-commerce website where users can purchase website templates.
+                        </p>
+                        <p>Node.js | Express | MongoDB | Stripe | Pagination | Git</p>
+                        <a href="https://pn-template-shop.herokuapp.com/" target="_blank" className="project-link">
+                            <img src={Visit} height="25" alt="Visit"/>
+                        </a>
                     </div>
                 </div>
             </div>

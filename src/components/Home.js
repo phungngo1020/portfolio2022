@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navigation from './Navigation';
 
 import ArtIcon from '../assets/Home/art.png';
@@ -28,6 +30,12 @@ import Linkedin from '../assets/Home/Linkedin.svg';
 import Email from '../assets/Home/Email.svg';
 
 const Home = () => {
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+
     return (
         <div className="home-wrapper">
             <Navigation />
