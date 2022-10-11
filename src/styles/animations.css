@@ -1,0 +1,35 @@
+
+@keyframes infiniteSpin {
+    100% { 
+        transform: rotate(360deg); 
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@keyframes infiniteBounceRight {
+    50% { 
+        transform: translate(40vw, 32vh);
+        -ms-transform: translate(40vw, 32vh);
+        -webkit-transform: translate(40vw, 32vh);
+        -moz-transform: translate(40vw, 32vh);
+    }
+}
+
+@keyframes infiniteBounceLeft {
+    50% { 
+        transform: translate(-40vw, 32vh);
+        -ms-transform: translate(-40vw, 32vh);
+        -webkit-transform: translate(-40vw, 32vh);
+        -moz-transform: translate(-40vw, 32vh);
+    }
+}
+@keyframes infiniteBounceLeft2 {
+    50% { 
+        transform: translate(-40vw, 72vh);
+        -ms-transform: translate(-40vw, 72vh);
+        -webkit-transform: translate(-40vw, 72vh);
+        -moz-transform: translate(-40vw, 72vh);
+    }
+}
